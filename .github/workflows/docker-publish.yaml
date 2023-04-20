@@ -39,4 +39,6 @@ jobs:
           push: true
           tags: |
             paulexis/tp9:latest
-            paulexis/tp9:${{steps.meta.outputs.labels}}
+            paulexis/tp9:${{steps.meta.outputs.tags}}
+          labels: |
+            ${{steps.meta.outputs.labels}}
