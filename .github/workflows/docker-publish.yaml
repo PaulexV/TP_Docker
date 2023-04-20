@@ -38,4 +38,5 @@ jobs:
           context: .
           push: true
           tags: |
-            type=raw,value=latest,enable={{is_default_branch}}
+            paulexis/tp9:${{steps.meta.outputs.tags}}
+            paulexis/tp9:latest
