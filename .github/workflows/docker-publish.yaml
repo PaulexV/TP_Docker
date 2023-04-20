@@ -37,5 +37,6 @@ jobs:
         with:
           context: ../../Dockerfile
           push: true
-          tags: ${{ steps.meta.outputs.tags }}
-          labels: ${{ steps.meta.outputs.labels }}
+          tags: |
+            type=raw,value=paulexis/tp9:latest,enable=true
+            type=raw,value=paulexis/tp9:${{steps.meta.outputs.labels}},enable=true
