@@ -36,5 +36,5 @@ jobs:
           context: .
           push: true
           tags: |
-            paulexis/tp9:${{ steps.meta.outputs.tags }}
+            ${{ steps.meta.outputs.tags }}
             paulexis/tp9:latest
